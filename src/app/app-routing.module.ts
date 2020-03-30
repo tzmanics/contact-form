@@ -18,7 +18,8 @@ const routes: Routes = [
   {
     path: "",
     loadChildren: () => import("./home/home.module").then(m => m.HomeModule)
-  }
+  },
+  { path: 'success', loadChildren: () => import('./contact/form-success/form-success.module').then(m => m.FormSuccessModule) }
 ];
 
 @NgModule({
